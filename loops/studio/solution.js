@@ -12,7 +12,7 @@ let desserts = ['apple', 'banana', 'more kale', 'ice cream', 'chocolate', 'kiwi'
 function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
   let pantry = [protein, grains, veggies, beverages, desserts];
   let meals = [];
-  
+
   /// Part A #2: Write a ``for`` loop inside this function
   /// Code your solution for part A #2 below this comment (and above the return statement) ... ///
   for (i = 0; i < numMeals; i++) {
@@ -28,9 +28,15 @@ function mealAssembly(protein, grains, veggies, beverages, desserts, numMeals) {
 
 function askForNumber() {
   let numPass = false  
+<<<<<<< HEAD
 
   /// CODE YOUR SOLUTION TO PART B here ///
   
+=======
+
+  /// CODE YOUR SOLUTION TO PART B here ///
+
+>>>>>>> 29c570d60b0687daa5a55cc58af50bc5ba52461d
   while(!numPass) {
     numMeals = input.question("How many meals would you like to make?");
     if (numMeals > 6 || numMeals < 1 || isNan (numMeals)) {
@@ -54,20 +60,31 @@ function generatePassword(string1, string2) {
 }
 
 function runProgram() {
-  
+
   /// TEST PART A #2 HERE ///
   /// UNCOMMENT the two lines of code below that invoke the mealAssembly function (starting with 'let meals =') and print the result ///
   /// Change the final input variable (aka numMeals) here to ensure your solution makes the right number of meals ///
   /// We've started with the number 2 for now. Does your solution still work if you change this value? ///
+<<<<<<< HEAD
   
   let meals = mealAssembly(protein, grains, veggies, beverages, desserts, 2);
   console.log(meals)
   
+=======
+
+  let meals = mealAssembly(protein, grains, veggies, beverages, desserts, 2);
+  console.log(meals)
+
+>>>>>>> 29c570d60b0687daa5a55cc58af50bc5ba52461d
 }
   /// TEST PART B HERE ///
   /// UNCOMMENT the next two lines to test your ``askForNumber`` solution ///
   /// Tip - don't test this part until you're happy with your solution to part A #2 ///
+<<<<<<< HEAD
   
+=======
+
+>>>>>>> 29c570d60b0687daa5a55cc58af50bc5ba52461d
   let mealsForX = mealAssembly(protein, grains, veggies, beverages, desserts, askForNumber());
   console.log(mealsForX);
 
